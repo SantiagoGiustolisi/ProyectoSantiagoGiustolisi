@@ -1,0 +1,244 @@
+
+body, h1, h2, h3,p,th, td, form, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    padding: 25px;
+}
+
+hr {
+    margin: 20px 0;
+    border-top: 2px solid #ccc721;
+}
+
+button {
+    background-color: #4ca7af;
+    color: black;
+    border: none;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: salmon;
+    display: inline-block;
+    font-size: 17px;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: block;
+}
+
+button:hover {
+   background-color: #3f4648;
+   transition-duration: 2s;
+   transform:scale(0.9);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(232, 0, 0, 0.1); 
+}
+
+table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 2px solid #e23939;
+}
+
+
+table td {
+    padding: 8px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #4f0ae4;
+    color:rgb(12, 12, 12)
+}
+
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+table td:first-child, table th:first-child {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-right: 2px solid #fff; /* Ocultar borde derecho */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type=text], input[type=number], input[type=date] {
+    width: calc(100% - 30px);
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#Listas, #NuevoProducto, #Cambios {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+img{
+    width: 130px;
+}
+a{
+    color: #000204;
+    text-decoration: none; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    background-color: #06fac5; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+.botones{
+    position: relative;
+    left: 30%;
+    top:-90px;
+    text-align: center;
+    display: none;
+}
+.Boton{
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+@media(max-width: 770px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    
+    .botones button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    form {
+        padding: 12px;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table td, table th {
+       padding: 5px 10px;
+        
+    }
+    
+    table th {
+    font-family: 'Courier New', Courier, monospace;
+    }
+    table th{
+        border-bottom: 2px solid #ddd;
+    }
+    footer{
+        display: none;
+    }
+    
+        body {
+            padding: 10px;
+            background-color: #b3d9ff;
+        }
+    
+        button {
+            display: block;
+            padding: 8px 14px; 
+            font-size: 15px; 
+            margin: 6px 1px; 
+            width: 100%;
+            background-color: #fffac8;
+
+        }
+        input[type=text], input[type=number], input[type=date] {
+            width: calc(100% - 16px); 
+            padding: 8px; 
+            margin: 6px 0 12px 0; 
+            font-size: 14px;
+        }
+    
+        #Listas, #NuevoProducto, #Cambios {
+            padding: 12px; 
+            margin-top: 12px; 
+        }
+        .botones {
+            text-align: center; 
+            margin-top: 8px; 
+            display:block;
+
+        }
+        .Boton{
+            display:none;
+        }
+        input[type=text], input[type=number], input[type=date]{
+            width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #060000;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #efdcdc;
+    transition: border-color 0.3s ease;
+        }
+        input[type=text]:focus, 
+input[type=number]:focus, 
+input[type=date]:focus {
+    border-color: #e4dd00; 
+    }
+}
+    
+
+    
+    
+
+
+
+
+
+
+
+
+

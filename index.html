@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+</head>
+<a href="Inicio.html">Inicio</a> <p>☝️ Si desea volver al inicio haga click en el enlace </p> 
+<header>
+    <nav>
+        
+        <img src="https://tse4.mm.bing.net/th?id=OIP.3SS_XYb0KlEL9d52ZEUidQHaHa&pid=Api&P=0&h=180" alt="Logo">
+        <div class="Boton">
+            <button onclick="MostrarMenu()">
+           Menú</button>
+      Para comenzar a cargar datos y generar una tabla con la información que desee, por favor, presione el botón , a continuación podra comenzar a trabajar....
+        </div>
+        <div  id="Principales" class="botones">
+        <button onclick="mostrar('Listas')">Lista de Productos</button>
+        <button onclick="mostrar('NuevoProducto')">Nuevo Producto</button>
+        <button onclick="ObtenerProductos()">Obtener Productos</button> 
+        </div>
+    </nav>
+    
+</header>
+<body>
+   
+    <hr>
+    <div id="Listas">
+        <h3>PRODUCTOS EN SU LISTA</h3>
+       
+        <table>
+            <tr>
+                <th> Ids </th>
+                <th>  Titulo </th>
+                <th>Precio Pesos</th>
+                <th>Precio Dolar</th>
+                <th> Fecha </th>
+            </tr>
+            <tbody id="Resultados"></tbody>
+        </table>
+    </div>
+    <div id="NuevoProducto"style="display:none">
+        <h2>Nuevo Producto</h2>
+    <form action="javascript:none">
+        <input type="text" id="titulo" placeholder="Ingrese un titulo">
+        <br>
+        <input type="number" id="precioventa" placeholder="Ingrese un Precio de Venta">
+        <br>
+        <input type="number" id="preciodolar" placeholder="Ingrese un Precio Dolar">
+        <br>
+        <label>Ingrese una fecha:</label>
+        <br>
+        <input type="date" id="fecha">
+
+        <button onclick="CrearNuevoProducto()">Crear Nuevo Producto</button>
+    </form>
+    </div>
+    <div id="Cambios" style="display: none;">
+        <h2>Editar Productos</h2>
+        <form id="Datos" action="javascript:void(0)">
+            
+            <input type="text"  id="nuevotitulo" placeholder="Titulo a Modificar">
+            <br>
+            <input type="number" id="nuevoprecioventa" placeholder="Precio Venta a Modificar ">
+            <br>
+            <input type="number"  id="nuevopreciodolar" placeholder="Precio Dolar a Modificar">
+            <br>
+            <label>Fecha a Modificar</label>
+            <br>
+            <input type="date"  id="nuevafecha">
+            <br>
+        </form>
+        <div id="Muestra"></div>
+    </div>
+</body>
+<link rel="stylesheet" href="estilo.css">
+<script src="script.js"></script>
+<footer>
+    <p>Derechos reservados &copy; 2024</p>
+    <p>Instagram: GSPag</p>
+    <p>Contacto:3576474062</p>
+</footer>   
+</html>
