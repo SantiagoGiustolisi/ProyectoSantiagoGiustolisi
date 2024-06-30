@@ -4,19 +4,15 @@ body, h1, h2, h3,p,th, td, form, input, button {
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
 body {
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
     padding: 25px;
 }
-
 hr {
     margin: 20px 0;
     border-top: 2px solid #ccc721;
 }
-
 button {
     background-color: #4ca7af;
     color: black;
@@ -31,13 +27,11 @@ button {
     border-radius: 10px;
     display: block;
 }
-
 button:hover {
    background-color: #3f4648;
    transition-duration: 2s;
    transform:scale(0.9);
 }
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -47,7 +41,6 @@ table {
     background-color: #fff;
     box-shadow: 0 0 20px rgba(232, 0, 0, 0.1); 
 }
-
 table th {
     background-color: #f0f0f0;
     font-weight: bold;
@@ -55,32 +48,23 @@ table th {
     text-align: left;
     border-bottom: 2px solid #e23939;
 }
-
-
 table td {
     padding: 8px 15px;
     vertical-align: middle;
     border-bottom: 1px solid #4f0ae4;
     color:rgb(12, 12, 12)
 }
-
-
 table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
-
-
-
 table td:first-child, table th:first-child {
     text-align: center;
     background-color: #f0f0f0;
     border-right: 2px solid #fff; /* Ocultar borde derecho */
 }
-
 form {
     margin-top: 20px;
 }
-
 input[type=text], input[type=number], input[type=date] {
     width: calc(100% - 30px);
     padding: 12px;

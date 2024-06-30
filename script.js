@@ -1,8 +1,8 @@
 var Api= 'https://api.yumserver.com/17057/products';
 function ObtenerProductos(){
     fetch (Api)
-    .then(response=>response.json())
     .then(MostrarProductos)
+    .then(response=>response.json())
     .catch(error=>console.log('Error',error));
 }
 function MostrarProductos(productos){
