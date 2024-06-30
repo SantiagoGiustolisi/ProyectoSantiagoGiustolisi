@@ -16,7 +16,7 @@ function MostrarProductos(productos){
             <td>${productos[i].precioDolar}</td>
             <td>${productos[i].fecha}</td>
         <td><button onclick="Borrar('${productos[i].idcod}')">Borrar</button></td>
-        <td><button onclick ="Cambiar('${productos[i].idcod}','${productos[i].titulo}','${productos[i].precioPeso}','${productos[i].precioDolar}','${productos[i].fecha}')">Cambiar</button></td>
+        <td><button onclick ="Cambiar('${productos[i].idcod}','${productos[i].titulo}','${productos[i].precioPeso}','${productos[i].precioDolar}','${productos[i].fecha}')">Editar</button></td>
         </tr>
         `;
 
