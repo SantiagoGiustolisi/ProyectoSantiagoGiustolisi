@@ -16,7 +16,7 @@ function MostrarProductos(productos){
             <td>${productos[i].precioDolar}</td>
             <td>${productos[i].fecha}</td>
         <td><button onclick="Borrar('${productos[i].idcod}')">Borrar</button></td>
-        <td><button onclick ="Cambiar('${productos[i].idcod}','${productos[i].titulo}','${productos[i].precioPeso}','${productos[i].precioDolar}','${productos[i].fecha}')">Editar</button></td>
+        <td><button onclick ="Cambiar('${productos[i].idcod}','${productos[i].titulo}','${productos[i].precioPeso}','${productos[i].precioDolar}','${productos[i].fecha}')">Cambiar</button></td>
         </tr>
         `;
 
@@ -63,7 +63,7 @@ function Cambiar(idcod, titulo, precioPeso, precioDolar, fecha) {
     document.getElementById('nuevoprecioventa').value = precioPeso;
     document.getElementById('nuevopreciodolar').value = precioDolar;
     document.getElementById('nuevafecha').value = fecha;
-    let html=`<button onclick=Modificar('${idcod}')>Cambiar</button>`
+    let html=`<button onclick=Modificar('${idcod}')>Editar</button>`
     document.getElementById('Muestra').innerHTML=html
 }
 
