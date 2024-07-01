@@ -119,13 +119,12 @@ footer {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #104e12;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
 }
 @media(max-width: 770px) {
     header nav {
@@ -163,7 +162,7 @@ footer {
     }
     
         body {
-            padding: 10px;
+            padding: 13px;
             background-color: #b3d9ff;
         }
     
@@ -202,10 +201,9 @@ footer {
     margin: 8px 0;
     box-sizing: border-box;
     border: 1px solid #060000;
-    border-radius: 5px;
-    font-size: 20px;
+    border-radius: 9px;
+    font-size: 16px;
     background-color: #efdcdc;
-    transition: border-color 0.3s ease;
         }
         input[type=text]:focus, 
 input[type=number]:focus, 

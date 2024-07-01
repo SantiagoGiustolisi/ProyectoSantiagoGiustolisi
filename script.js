@@ -63,7 +63,7 @@ function Cambiar(idcod, titulo, precioPeso, precioDolar, fecha) {
     document.getElementById('nuevoprecioventa').value = precioPeso;
     document.getElementById('nuevopreciodolar').value = precioDolar;
     document.getElementById('nuevafecha').value = fecha;
-    let html=`<button onclick=Modificar('${idcod}')>Editar</button>`
+    let html=`<button onclick=Modificar('${idcod}')>Cambiar</button>`
     document.getElementById('Muestra').innerHTML=html
 }
 
